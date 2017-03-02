@@ -1,0 +1,395 @@
+* {
+	font-family: 'Fira Sans', sans-serif;
+}
+html *{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	width: 100%;
+}
+.studies h1.title, .work-experience h1.title, .knowledge h1.title{
+	font-size: 2em;
+}
+.page-container{
+	width: 100%;
+	overflow: hidden;
+}
+header{
+	display:none;
+}
+
+.cover{
+	background-image: url(/assets/img/cover_bg.jpg);
+	background-size: cover;
+	height: 12.5rem;
+	position: relative;
+}
+.personal-info{
+	width: 100%;
+	text-align: center;
+}
+.profile-pic{
+	width: 7.375em;
+	height: 7.25em;
+	background-size: cover;
+	background-image: url(/assets/img/profile_pic.png);
+	border-radius: 50%;
+	margin: 0 auto;
+}
+.personal-info h1{ 
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+.profile{
+	font-weight: 100;
+	font-size: 1em;
+	letter-spacing: 0.18em;
+}
+
+
+/** about me **/
+.about-me .profile-pic{
+	display: none;
+	position: relative;
+	z-index: 1;
+}
+.about-me h1.title{
+	z-index: 2;
+	position: relative;
+}
+.about-me p{
+	margin-top: 0;
+}
+
+
+.container{
+	position: relative;
+	height: 100%;
+	margin: 0 auto;
+}
+
+/** knowledge **/
+.knowledge h1.title{
+	margin-bottom: 0;
+	text-align: center;
+}
+.knowledge-bg{
+	background-image: url(/assets/img/knowledge.jpg);
+	background-repeat: no-repeat;
+	background-position: left center;
+	position: relative;
+}
+.knowledge-list ul{
+	background-color: rgb(237,237,242);
+	margin: 0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+	padding-right: 1em;
+}
+.knowledge-list ul li{
+	list-style-type: square;
+}
+
+/** Studies **/
+.studies{
+	margin-top: 0;
+	padding-top: 1.5em;
+	background-image: url(/assets/img/studies_bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.studies h1.title{
+	margin-top: 0;
+}
+.study-detail{
+  z-index: 999;
+	width: 13.25em;
+	height: 13.25em;
+	border-radius: 50% ;
+	background-color: rgb(29,186,186);
+	border: 1px #fff solid;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 1em;
+}
+.study-detail:after{
+	content: '';
+	position: absolute;
+	border-radius: 50%;
+	top: 0;
+	bottom: 0;
+	left: 0; 
+	right: 0;
+	background-color: rgb(31,37,46);
+	transition: transform 0.4s;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.study-text{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+	font-size: 0.75em;
+	padding: 0.14em;
+}
+.study-detail:hover:after{
+	transform: translateX(-160%);
+}
+.study-detail.study-itm:after{
+	background-image: url(/assets/img/itm_logo.png);
+}
+.study-detail.study-sena:after{
+	background-image: url(/assets/img/sena_logo.png);
+}
+.language-list{
+	display: table;
+	color: #fff;
+	border-collapse: separate;
+  	border-spacing: 1em;
+    text-align: center;
+}
+.language{
+	display: table-row;
+	margin-right: 0.5em;
+}
+.language-name{
+	display: table-cell;
+	font-style: italic;
+	font-weight: 100;
+}
+.language-skill{
+	display: table-cell;
+	width: 100%;
+	height: 1em;
+	background-color: #808080;
+	position: relative;
+}
+.language-skill.p-100{
+	background-color: rgb(29,186,186);
+}
+.language-skill.p-85:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 85%;
+	background-color: rgb(29,186,186);
+}
+
+/* Work experience */
+.work-list{
+	text-align: center;
+}
+.work{
+	padding: 0 1em 1em 1em;
+	text-align: left;
+}
+.work h1{
+    text-transform: uppercase;
+    font-size: 1.4em;
+}
+.work div{
+        font-weight: 100;
+	color: #696868;
+}
+.work span{
+	font-weight: bold;
+}
+.work .work-details{
+	line-height: 1.4em;
+}
+
+/* Contact */
+.contact{
+	background-image: url(/assets/img/contact_bg.jpg);
+	background-size: cover;
+}
+.contact h1.title{
+	margin: 0;
+}
+.contact-info{
+	font-weight: 100;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.signature{
+	display: none;
+	font-size: 5.5em;
+	position: relative;
+}
+.signature:after{
+	content: '';
+    width: 2px;
+    height: 0.9em;
+    position: absolute;
+    bottom: 0.1em;
+    right: 0;
+    background-color: #fff;
+    transform: rotate(15deg);
+}
+.personal-details{
+	margin-left: 0.5em;
+}
+
+@media screen and (min-width: 26.875em){
+	.cover {
+		height: 15em;
+	}
+	.cover .profile-pic{
+		display: none;
+		/*
+		position: absolute;
+		right: 15%;
+		top: 75%;
+		font-size: 1.3em;
+		*/
+	}
+	.personal-info{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: auto;
+		right: 15%;
+		font-size: 1.4em;
+	}
+	.presentation .title{
+		/* by default, our h1.title has a margin-top, which is desirable when on small screens */
+		margin-top: 0;
+	}
+	/* Responsive about me */
+	.about-me .profile-pic{
+		display: block;
+	}
+	.about-me h1.title span{
+		display:block;
+	}
+	.title-pic-wrapper{
+		position: absolute;
+		right: 12%;
+		font-size: 1.5em;
+	}
+	.title-pic-wrapper > h1 {
+		display: inline-block;
+		vertical-align: top;
+		line-height: 0.8em;
+	}
+	.title-pic-wrapper > h1 span:before{
+		content: '\00a0\00a0\00a0\00a0';
+		position: relative;
+		display: inline-block;
+	}
+	.about-me .profile-pic{
+		display: inline-block;
+		top: -2em;
+		left: -1em;
+	}
+	.about-me p{
+		padding: 9em 2em 0 2em;
+	}
+	.studies-list{
+		text-align: center;
+		max-width: 25.5625em;
+		margin: 0 auto;
+	}
+	.study-detail{
+		display: inline-block;
+		width: 11.25em;
+		height: 11.25em;
+    margin-right: 1em;
+	}
+	.signature{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.personal-details{
+		display: inline-block;
+		vertical-align: middle;
+	}
+}
+@media screen and (min-width: 48em){
+	.container{
+		width: 47em;
+	}
+	.cover{
+		height: 25em;
+	}
+	.title-pic-wrapper .profile-pic{
+		font-size: 1.4em;
+	}
+	.about-me p {
+		padding: 12em 2em 0 2em;
+	}
+	.knowledge h1.title{    
+		margin-top: 0;
+		position: absolute;
+		z-index: 2;
+		width: 35%;
+		top: 50%;
+		padding: 0.8em;
+		text-align: right;
+	}
+	.knowledge-list{
+		padding-top: 1em;
+		padding-bottom: 1em;
+		width: 30.25em;
+    margin-left: 35%;
+	}
+	.knowledge-bg{
+		background-size: 60% 100%;
+	}
+	.studies-list{
+		max-width: 100%;
+	}
+	.study-detail{
+		margin-right: 0.3em;
+	}
+	.language-list{
+		display: block;
+	}
+	.language, .language-name, .language-skill{
+		display: inline-block;
+	}
+	.language-skill{
+		width: 17em;
+	}
+	.work{
+		display: inline-block;
+		width: 49%;
+    vertical-align: top;
+	}
+}
+/* global styles */
+.black-bar{
+	background-color: rgba(0, 0, 0, 0.4);
+	padding-top: 2em;
+	padding-bottom: 2em;
+	width: 100%;
+}
+.align-center{
+	text-align: center;
+}
+h1.title, .signature{
+	font-style: italic;
+	font-weight: 100;
+}
+h1.title span, .signature span{
+	font-weight: bold;
+	font-style: normal;
+}
+.color-white{
+	color: #fff;
+}
+.color-gray{
+	color: rgb(137,137,142);
+}
+.color-main{
+	color: rgb(29,186,186);
+}
+.bg-color-main{
+	background-color: rgb(29,186,186);
+}
