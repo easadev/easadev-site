@@ -1,0 +1,22 @@
+<h1>[[+companyName]]</h1>
+  <div class="work-details">
+  <div>
+    <span>POSITION:</span> [[+companyPosition]]
+  </div>
+  <div>
+    <span>FUNCTIONS:</span>
+    <div>
+      [[+companyFunctions]]
+      <br>
+    </div>
+  </div>
+  <div>
+    <span>IMMEDIATE CHIEF:</span> [[+immediateChief]]
+  </div>
+  <!-- <div>
+    <span>CONTACT'S NUMBER:</span> [[+chiefNumber]]
+  </div>-->
+  <div>
+    <span>DATE OF CONTRACT:</span> [[+contractDate]]
+  </div>
+</div>
